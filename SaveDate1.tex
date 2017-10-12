@@ -1,12 +1,61 @@
-\documentclass{minimal}
+\documentclass[14]{article}
+\usepackage{color,libris, pagecolor,xcolor}
+%\usepackage{abecedario}
+%\renewcommand*\familydefault{\sfdefault}
+%\usepackage{frcursive}
+%\usepackage{emerald}
+%\usepackage[T1]{fontenc}
+\usepackage[paperwidth=5.5in,paperheight=4.25in, margin=0in, hoffset=-0.3in]{geometry}
+\pagenumbering{gobble}
+\usepackage{graphicx,tikz}
+\usepackage{fontspec}
+\fontspec{Abecedario}
+\setmainfont{Abecedario}
+%\fontspec{Cupola}
+%\setmainfont{Cupola}
 
-\usepackage[paperwidth=5in, 
-    paperheight=3.5in,
-    left=0.50in,
-    right=0.50in,
-    top=0.50in,
-    bottom=0.50in]{geometry}
+\newcommand{\sffont}{\fontfamily{yesjw}\selectfont }
 
 \begin{document}
+\pagecolor{yellow!60}
+\title{Wedding stationary}
+\author{J.H. Belle}
+%\maketitle
+\clearpage
+\begin{minipage}[s]{3.1in}
+\includegraphics*[height=4.25in, width=3.1in]{matisseCat.jpg}
+\end{minipage}
+\begin{minipage}{2.4in}
+\begin{center}
+{\LARGE Save the Date --} \\
+(We've finally caught one) \\ \bigskip \bigskip
+\begin{tikzpicture}
+%\draw[very thick] (0.8,1) to[out=180, in=260] (2,1.5);
+%\draw[thick] (0.9,0.7) to[out=90, in=170] (2,1.5);
+%\draw[ultra thick, color=orange!75!black, rounded corners=4pt] (1.9,1.4) -- (1.7,1.5) -- (1.95,1.3) -- (1.6,1.45) -- (1.8,1.25) -- (1.5,1.5) -- (1.7,1.15) -- (1.3,1.4) -- (1.5,1.1) -- (1.2,1.4) -- (1.4,1.05) -- (1.15,1.3) -- (1.1,1);
+\node at (1.0,1.3) {\sffont \Large \textbf{May}};
+\draw[very thick] (1.3,0.3) to[out=10, in=260] (3,1.4);
+\draw[very thick] (1.3,0.3) to[out=60, in=90] (3,0.9);
+\node[color=orange!40!black] at (1.9,0.65) {\sffont \textbf{5}};
+\node[color=orange!40!black] at (2.2,0.75) {\sffont \textbf{\&}};
+\node[color=orange!40!black] at (2.4,0.9) {\sffont \textbf{6}};
+%\draw[ultra thick, color=orange!80!black, rounded corners=2pt] (1,0) -- (0.85,0.05) -- (1,0.1) -- (0.75, 0.05) -- (1.05, 0.15)  -- (0.65,0.18) -- (1,0.3) -- (0.5,0.28) -- (0.9, 0.5) -- (0.35, 0.35) -- (0.8,0.55) -- (0.25,0.5) -- (0.7,0.6) -- (0.2,0.65) -- (0.2,0.9);
+%\draw[thick] (0.2,1) to[bend right] (1,0);
+%\draw[thick] (0,0.8) to[bend left] (1,0);
+\node at (3, 0) {\sffont \LARGE 2018};
+\end{tikzpicture}
+\\ \bigskip \bigskip Join us in celebrating \\the union of \\ \bigskip
+{\large Jessica Hartmann Belle} \\ \smallskip
+and \\ \smallskip
+{\large James Thomas Sheppard} \\ \bigskip
+{\small Chicago, Illinois}
+\end{center}
+\end{minipage}
+%\clearpage
+%RSVP - Saturday
+%\clearpage
+% Invite
 
+%\clearpage
+%Thank you
 \end{document}

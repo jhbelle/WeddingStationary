@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{color,xcolor,pagecolor}
+%\usepackage[placement=top]{background}
+\usepackage{fontspec}
+\usepackage{pgfornament}
+%\usepackage[OT1]{fontenc}
+\usepackage[paperwidth=4.61in,paperheight=7.17in,margin=0in]{geometry}
+\pagenumbering{gobble}
+\usepackage{graphicx,tikz}
+\fontspec{Graph}
+\setmainfont{Graph}
+%\fontspec{ArchiesHand-Regular.ttf}
+%\setmainfont{ArchiesHand-Regular.ttf}
+
+% Now create a new font family for the special font.
+% This creates a font switch macro \cursivefont which works
+% like \sffamily
+\newfontfamily\cursivefont[Scale=MatchLowercase]{Zekton Dots}
+
+% Now create an equivalent command that takes an argument
+% This creates a \cursive{} macro.
+\DeclareTextFontCommand{\cursive}{\cursivefont}
+\begin{document}
+
+%\backgroundsetup{contents={\vspace{-2mm}\includegraphics*[width=15mm]{MatisseCarriage.jpg}}}
+\pagecolor{red!60!blue}
+\vspace*{0.8in}
+
+\colorbox{black}{\begin{minipage}{0.9\textwidth}
+\begin{center}
+\vspace{0.2in}
+\textcolor{white}{John and Katherine Belle ask you to join them at their home to celebrate the marriage of \\ \vspace{0.1in} {\cursivefont \LARGE James Thomas Sheppard} \\ and {\cursivefont \Large Jessica Hartmann Belle} \vspace{0.1in} \\ on the afternoon of \\ {\bf May 6th, 2018} \\ \bigskip at \\ \bigskip 2237 Warrenville ave. \\ Wheaton, IL. 60189 \\ \bigskip Ceremony: {\bf 2:30 PM} \\ Reception: {\bf 1-7 PM} \\ \bigskip Casual attire \\ \bigskip We would prefer your presence to your presents \\ \smallskip Should you choose to give, Jess and James are registered on Amazon.com} 
+\end{center}
+\end{minipage}}
+
+
+\end{document}

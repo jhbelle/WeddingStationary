@@ -1,21 +1,38 @@
 \documentclass{article}
-\usepackage{avant}
-\renewcommand*\familydefault{\sfdefault}
-\usepackage[T1]{fontenc}
-\usepackage[paperwidth=5in,paperheight=4in]{geometry}
+\usepackage{color,xcolor,pagecolor}
+%\usepackage[placement=top]{background}
+\usepackage{fontspec}
+\usepackage{pgfornament}
+%\usepackage[OT1]{fontenc}
+\usepackage[paperwidth=5in,paperheight=7in,margin=0.3in]{geometry}
 \pagenumbering{gobble}
+\usepackage{graphicx,tikz}
+\fontspec{JosefinSlab-SemiBold.ttf}
+\setmainfont{JosefinSlab-SemiBold.ttf}
+%\fontspec{ArchiesHand-Regular.ttf}
+%\setmainfont{ArchiesHand-Regular.ttf}
+\fboxsep=20pt
+% Now create a new font family for the special font.
+% This creates a font switch macro \cursivefont which works
+% like \sffamily
+\newfontfamily\cursivefont[Scale=MatchLowercase]{Streetwear.otf}
 
+% Now create an equivalent command that takes an argument
+% This creates a \cursive{} macro.
+\DeclareTextFontCommand{\cursive}{\cursivefont}
 \begin{document}
-\title{Wedding stationary}
-\author{J.H. Belle}
-\maketitle
-\clearpage
-Save the date 
-\clearpage
-RSVP
-\clearpage
-Invite
 
-\clearpage
-Thank you
+%\backgroundsetup{contents={\vspace{-2mm}\includegraphics*[width=15mm]{MatisseCarriage.jpg}}}
+\pagecolor{red!60!blue}
+
+\vspace*{0.5in}
+\colorbox{black}{\begin{minipage}{0.8\textwidth}
+\begin{center}
+\vspace{0.5in}
+\textcolor{white}{ John and Katherine Belle invite you and your family to join them at their home to celebrate the marriage of their daughter, \\ \vspace{0.1in} {\cursivefont \Large Jessica Hartmann Belle,} to \\ {\cursivefont \LARGE James Thomas Sheppard} \vspace{0.1in} \\ on the afternoon of \\ {\bf May 6th, 2018} \\ \bigskip at \\ \bigskip 2237 Warrenville ave. \\ Wheaton, IL. 60189 \\ \bigskip Ceremony: {\bf 2:30 PM} \\ Reception: {\bf 1-7 PM} \\ \vspace{0.5in} Casual attire \\ \vspace{0.3in}} 
+\end{center}
+\end{minipage}}
+
+
 \end{document}
+
