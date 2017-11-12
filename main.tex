@@ -15,8 +15,8 @@
 % Now create a new font family for the special font.
 % This creates a font switch macro \cursivefont which works
 % like \sffamily
-\newfontfamily\cursivefont[Scale=MatchLowercase]{Streetwear.otf}
-
+\newfontfamily\cursivefont[Scale=MatchLowercase]{ArchiesHand-Regular.ttf}
+\definecolor{carriage}{RGB}{22, 97, 173}
 % Now create an equivalent command that takes an argument
 % This creates a \cursive{} macro.
 \DeclareTextFontCommand{\cursive}{\cursivefont}
@@ -25,11 +25,15 @@
 %\backgroundsetup{contents={\vspace{-2mm}\includegraphics*[width=15mm]{MatisseCarriage.jpg}}}
 \pagecolor{red!60!blue}
 
-\vspace*{0.5in}
+\vspace*{1mm}
+
 \colorbox{black}{\begin{minipage}{0.8\textwidth}
 \begin{center}
-\vspace{0.5in}
-\textcolor{white}{ John and Katherine Belle invite you and your family to join them at their home to celebrate the marriage of their daughter, \\ \vspace{0.1in} {\cursivefont \Large Jessica Hartmann Belle,} to \\ {\cursivefont \LARGE James Thomas Sheppard} \vspace{0.1in} \\ on the afternoon of \\ {\bf May 6th, 2018} \\ \bigskip at \\ \bigskip 2237 Warrenville ave. \\ Wheaton, IL. 60189 \\ \bigskip Ceremony: {\bf 2:30 PM} \\ Reception: {\bf 1-7 PM} \\ \vspace{0.5in} Casual attire \\ \vspace{0.3in}} 
+\vspace{0.2in}
+\textcolor{white}{\large John and Katherine Belle invite you and your loved ones to join them at their home to celebrate the marriage of their daughter, \\ \vspace{0.1in} {\cursivefont \Large Jessica Hartmann Belle,} to \\ {\cursivefont \LARGE James Thomas Sheppard} \vspace{0.1in} \\ on the afternoon of \\ {\bf May 6th, 2018} \\ \bigskip at \\ \bigskip 2237 Warrenville ave. \\ Wheaton, IL. 60189 \\ \bigskip Reception: {\bf 1-7 PM} \\
+\vspace{5mm} 
+%\colorbox{blue!70!black}{\colorbox{white}{\textcolor{red}{\bf Casual attire}}} \\ }
+\colorbox{carriage}{\colorbox{white}{\textcolor{red}{Ceremony: {\bf 2:30 PM} }}} \\ \bigskip Casual attire } 
 \end{center}
 \end{minipage}}
 

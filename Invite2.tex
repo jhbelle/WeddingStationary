@@ -4,19 +4,19 @@
 \usepackage{fontspec}
 \usepackage{pgfornament}
 %\usepackage[OT1]{fontenc}
-\usepackage[paperwidth=4.61in,paperheight=7.17in,margin=0in]{geometry}
+\usepackage[paperwidth=5in,paperheight=7in,margin=0.3in]{geometry}
 \pagenumbering{gobble}
 \usepackage{graphicx,tikz}
-\fontspec{Graph}
-\setmainfont{Graph}
+\fontspec{JosefinSlab-SemiBold.ttf}
+\setmainfont{JosefinSlab-SemiBold.ttf}
 %\fontspec{ArchiesHand-Regular.ttf}
 %\setmainfont{ArchiesHand-Regular.ttf}
-
+\fboxsep=20pt
 % Now create a new font family for the special font.
 % This creates a font switch macro \cursivefont which works
 % like \sffamily
-\newfontfamily\cursivefont[Scale=MatchLowercase]{Zekton Dots}
-
+\newfontfamily\cursivefont[Scale=MatchLowercase]{ArchiesHand-Regular.ttf}
+\definecolor{carriage}{RGB}{22, 97, 173}
 % Now create an equivalent command that takes an argument
 % This creates a \cursive{} macro.
 \DeclareTextFontCommand{\cursive}{\cursivefont}
@@ -24,12 +24,16 @@
 
 %\backgroundsetup{contents={\vspace{-2mm}\includegraphics*[width=15mm]{MatisseCarriage.jpg}}}
 \pagecolor{red!60!blue}
-\vspace*{0.8in}
 
-\colorbox{black}{\begin{minipage}{0.9\textwidth}
+\vspace*{1mm}
+
+\colorbox{black}{\begin{minipage}{0.8\textwidth}
 \begin{center}
 \vspace{0.2in}
-\textcolor{white}{John and Katherine Belle ask you to join them at their home to celebrate the marriage of \\ \vspace{0.1in} {\cursivefont \LARGE James Thomas Sheppard} \\ and {\cursivefont \Large Jessica Hartmann Belle} \vspace{0.1in} \\ on the afternoon of \\ {\bf May 6th, 2018} \\ \bigskip at \\ \bigskip 2237 Warrenville ave. \\ Wheaton, IL. 60189 \\ \bigskip Ceremony: {\bf 2:30 PM} \\ Reception: {\bf 1-7 PM} \\ \bigskip Casual attire \\ \bigskip We would prefer your presence to your presents \\ \smallskip Should you choose to give, Jess and James are registered on Amazon.com} 
+\textcolor{white}{\large John and Katherine Belle invite you and your loved ones to join them at their home to celebrate the marriage of their daughter, \\ \vspace{0.1in} {\cursivefont \Large Jessica Hartmann Belle,} to \\ {\cursivefont \LARGE James Thomas Sheppard} \vspace{0.1in} \\ on the afternoon of \\ {\bf May 6th, 2018} \\ \bigskip at \\ \bigskip 2237 Warrenville ave. \\ Wheaton, IL. 60189 \\ \bigskip Reception: {\bf 1-7 PM} \\
+\vspace{5mm} 
+%\colorbox{blue!70!black}{\colorbox{white}{\textcolor{red}{\bf Casual attire}}} \\ }
+\colorbox{carriage}{\colorbox{white}{\textcolor{red}{Ceremony: {\bf 2:30 PM} }}} \\ \bigskip Casual attire } 
 \end{center}
 \end{minipage}}
 
